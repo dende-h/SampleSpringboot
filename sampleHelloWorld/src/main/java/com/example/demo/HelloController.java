@@ -12,4 +12,5 @@ public class HelloController {
 		model.addAttribute("title", "Hello Springboot!" );
 		return "index";
 	}
+
 }
