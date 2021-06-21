@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8"/>
 <title>Hello</title>
 </head>
-<body><h1>HelloWorld</h1>
+<body><h1 th:text="${title}"></h1>
+<b>はじめてのSpringBootです！</b>
 
+<figure>
+<legend>頑張るぞ！</legend>
+<img src = "C:\Users\miyuk\Desktop\img\fight.png">
+</figure>
 </body>
 </html>
