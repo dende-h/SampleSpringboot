@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8"/>
 <title>Hello</title>
 </head>
-<body><h1>HelloWorld</h1>
+<body><h1 th:text="${title}"></h1>
+<b>はじめてのSpringBootです！</b>
+
+	<form action = "/callResponce">
+	名前<input type = "text", name = "name"><br/>
+	座右の銘<input type = "text", name = "tweet"><br/>
+	<button name = "送信">送信</button><br/> 
+</form>
 
 </body>
 </html>
