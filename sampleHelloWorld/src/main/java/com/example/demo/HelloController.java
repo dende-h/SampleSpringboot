@@ -15,7 +15,7 @@ public class HelloController {
 		return "index";
 	}
 	@RequestMapping(value = "/callResponce")
-	public ModelAndView responce(@RequestParam String name, @RequestParam String tweet) {
+	public ModelAndView responce(@RequestParam String name, String tweet) {
 		ModelAndView mav = new ModelAndView();//メソッドで引数を受け取りながらmavインスタンスを生成
 		mav.setViewName("callResponce");//インスタンスでsetViewNameメソッドでindex.htmlにアクセス
 		mav.addObject("responce", "こんにちは、" + name + "です " + "座右の銘は" + tweet);//addObjectメソッドでresponceをキーにして値を返す
